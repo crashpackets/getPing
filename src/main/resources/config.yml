@@ -20,6 +20,12 @@ action_bar_ping: "<green>Your ping: <color><ping>ms</color>"
 # Boss Bar Ping Display
 boss_bar_ping: "<green>Your ping: <color><ping>ms</color>"
 
+# Leaderboard Settings
+leaderboard:
+  title: "<green>Top %count% Players with Best Ping:</green>"
+  entry_format: "<green>%position%. %player%: <color>%ping%ms</color>"
+  max_entries: 10  # Maximum number of players to display in the leaderboard
+
 # Messages
 messages:
   console_error: "<red>Only players can use this command!"
