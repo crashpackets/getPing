@@ -22,7 +22,7 @@
 
 ## Installation 📥
 
-1. Download the latest `getPing.jar` from the [Releases](https://github.com/yourusername/getPing/releases) page.
+1. Download the latest `getPing.jar` from the [Releases](https://github.com/crashpackets/getPing/releases) page.
 2. Place the `.jar` file in your server's `plugins` folder.
 3. Restart your server.
 4. Customize the `config.yml` to your liking.
