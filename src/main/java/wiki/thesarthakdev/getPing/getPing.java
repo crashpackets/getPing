@@ -3,6 +3,7 @@ package wiki.thesarthakdev.getPing;
 import org.bukkit.plugin.java.JavaPlugin;
 import wiki.thesarthakdev.getPing.commands.PingCommand;
 import wiki.thesarthakdev.getPing.commands.PingReloadCommand;
+import wiki.thesarthakdev.getPing.commands.PingTopCommand;
 import wiki.thesarthakdev.getPing.listeners.PingListener;
 
 public class getPing extends JavaPlugin {
@@ -15,6 +16,7 @@ public class getPing extends JavaPlugin {
         // Register commands
         getCommand("ping").setExecutor(new PingCommand(this));
         getCommand("pingreload").setExecutor(new PingReloadCommand(this));
+        getCommand("pingtop").setExecutor(new PingTopCommand(this));
 
         // Register event listener
         getServer().getPluginManager().registerEvents(new PingListener(this), this);

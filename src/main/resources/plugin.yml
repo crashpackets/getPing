@@ -1,12 +1,9 @@
-name: GetPing
-version: '0.3'
+name: getPing
+version: '1.0'
 main: wiki.thesarthakdev.getPing.getPing
 api-version: '1.21'
-prefix: getPing
-load: STARTUP
-authors: [ Sarthak Kumar ]
-description: getPing is a lightweight, optimized, open-source plugin that lets you check a player's ping in multiple ways with minimal performance impact.
-website: https://thesarthakdev.wiki
+authors: [Sarthak Kumar]
+description: A lightweight and optimized plugin to check player ping with minimal performance impact.
 commands:
   ping:
     description: Check your or another player's ping.
@@ -16,7 +13,10 @@ commands:
     description: Reload the plugin's configuration.
     usage: /pingreload
     permission: getping.reload
-
+  pingtop:
+    description: Display the top 10 players with the best ping.
+    usage: /pingtop
+    permission: getping.pingtop
 permissions:
   getping.use:
     description: Allows players to use the /ping command and right-click ping check.
@@ -24,3 +24,6 @@ permissions:
   getping.reload:
     description: Allows reloading the plugin's configuration.
     default: op
+  getping.pingtop:
+    description: Allows players to use the /pingtop command.
+    default: true
