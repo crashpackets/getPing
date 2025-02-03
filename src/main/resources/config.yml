@@ -1,0 +1,25 @@
+# Ping threshold for color coding
+ping_threshold: 60
+
+# Colors for ping
+color_good: "<#9BCF53>"  # Color for good ping
+color_bad: "<#FF0000>"   # Color for bad ping
+
+# Whether to send ping messages to chat in addition to the action bar
+send_to_chat: false
+
+# Cooldown for right-click checks (in milliseconds)
+right_click_cooldown: 3000  # 3 seconds
+
+# Whether to enable the cooldown message
+cooldown_message_enabled: true
+
+# Messages
+messages:
+  console_error: "<red>Only players can use this command!"  # Message sent to console when a non-player uses the command
+  no_permission: "<red>You do not have permission to use this command!"  # No permission message
+  player_not_found: "<red>Player not found or offline!"  # Player not found message
+  self_ping: "<green>Your ping is <color><ping>ms!</green>"  # Message format for checking your own ping
+  other_ping: "<green><target>'s ping is <color><ping>ms!</green>"  # Message format for checking another player's ping
+  reload_success: "<green>Configuration reloaded successfully!"  # Reload success message
+  cooldown_message: "<red>Please wait before checking ping again!"  # Cooldown message
